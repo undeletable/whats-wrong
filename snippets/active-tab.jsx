@@ -1,21 +1,9 @@
 import React, { useState } from "react";
 
 const TABS = [
-    {
-        id: "tab0",
-        title: "First tab",
-        body: "Contents of the first tab"
-    },
-    {
-        id: "tab1",
-        title: "Second tab",
-        body: "Contents of the second tab"
-    },
-    {
-        id: "tab2",
-        title: "Third tab",
-        body: "Contents of the third tab"
-    }
+    { id: "tab1", title: "First tab", body: "Contents of the first tab" },
+    { id: "tab2", title: "Second tab", body: "Contents of the second tab" },
+    { id: "tab3", title: "Third tab", body: "Contents of the third tab" }
 ];
 
 const TabsView = () => {
