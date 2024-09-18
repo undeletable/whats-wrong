@@ -38,11 +38,14 @@ const addCode = (title, buttonId, fileName, language) => {
                 const codeElement = document.getElementById("code");
                 codeElement.setAttribute("class", `language-${language}`);
                 codeElement.innerText = contents;
-                codeElement.innerHTML = codeElement.innerHTML.replace(/[<]br[/]?[>]/gi, "\n");
                 Prism.highlightElement(codeElement);
             });
     });
 };
+
+Prism.hooks.add("before-highlight", env => {
+    env.code = env.element.innerText;
+});
 
 SNIPPETS.forEach(({ buttonId, fileName: fileName, language, title }) => {
     addCode(title, buttonId, fileName, language);
