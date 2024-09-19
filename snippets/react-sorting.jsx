@@ -1,5 +1,3 @@
-import React from "react";
-
 const CitiesView = () => {
     const cities = ["Kyiv", "Lviv", "Odesa", "Kharkiv", "Dnipro", "Lutsk", "Poltava"];
 

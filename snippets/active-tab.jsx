@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const TABS = [
     { id: "tab1", title: "First tab", body: "Contents of the first tab" },
     { id: "tab2", title: "Second tab", body: "Contents of the second tab" },

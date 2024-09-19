@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 const MAX_COUNTER_VALUE = 10;
 
 const CounterView = () => {

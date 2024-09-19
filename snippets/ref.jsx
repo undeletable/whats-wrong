@@ -1,5 +1,3 @@
-import React, { useRef } from "react";
-
 const CounterView = () => {
     const counter = useRef(0);
 
