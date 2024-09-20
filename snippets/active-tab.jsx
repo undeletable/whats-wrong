@@ -12,7 +12,7 @@ const TabsView = () => {
             <aside>
                 <ul>
                     {TABS.map(tab => (
-                        <li>
+                        <li key={tab.id}>
                             <button onClick={() => setActiveTab(tab)}>
                                 {tab.title}
                             </button>

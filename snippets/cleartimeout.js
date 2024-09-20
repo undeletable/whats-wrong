@@ -3,5 +3,5 @@ setTimeout(() => {
 }, 1000);
 
 fetch("/data").then(() => {
-    clearTimeout;
+    clearTimeout();
 });
