@@ -1,0 +1,17 @@
+- [Active tab](snippets/active-tab.jsx) - Initial value of `activeTab` is `undefined`, which causes JS errors after reading properties of `undefined` (`activeTab.title`, `activeTab.body`)
+- [Clear timeout](snippets/clear-timeout.js) - No timer id is passed to `clearTimeout`
+- [Component error](snippets/component-error.jsx) - Throwing error inside component function breaks the app, if there's no error boundary higher in virtual DOM
+- [constructor](snippets/constructor.js) - Constructor function is called without `new` keyword
+- [continue](snippets/continue.js) - `continue` is used not in a loop
+- [Event listener](snippets/event-listener.js) - References to different functions are passed to `addEventListener` and `removeEventListener`
+- [fetch](snippets/fetch.js) - `response.json()` is not called before accessing response body as JSON object
+- [finally](snippets/finally.js) - `catch` block is absent, and `error` is not available from `finally` one
+- [for...of](snippets/for-of.js) - `for...of` is used not for an iterable
+- [includes](snippets/includes.js) - `includes` and `indexOf` are called with object literals, which are not equal to any of objects in the array
+- [JSON.parse](snippets/json-parse.js) - Not valid JSON string: single quotes are used for wrapping properties values, no quotes wrap properties names
+- [Local storage](snippets/localstorage.js) - Local storage can only store string data, so object contents is lost without proper serialization
+- [NaN](snippets/nan.js) - `NaN` is never equal to `NaN`
+- [Numbers sorting](snippets/numbers-sorting.js) - `sort()` with default comparison function sorts array items as strings
+- [Promise](snippets/promise.js) - Promise is never resolved
+- [React sorting](snippets/react-sorting.jsx) - `cities` array is mutated during sorting, which doesn't result in component's rerender
+- [Ref](snippets/ref.jsx) - Change of ref value doesn't result in component's rerender
